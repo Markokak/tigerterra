@@ -1,0 +1,84 @@
+/* Contact Form Styling */
+.contact__form {
+  margin-bottom: 15px;
+}
+
+.contact__btn {
+  padding: 10px 20px;
+  background-color: #000d6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact__btn:hover {
+  background-color: #004d99;
+}
+
+/* Contact Information Styling */
+.contact__info {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.contact__info h6 {
+  font-size: 1.5rem;
+  color: #000d6b;
+  margin-bottom: 15px;
+}
+
+.contact__info-item {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info-label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000d6b;
+  margin: 0;
+}
+
+.contact__info-value {
+  font-size: 1rem;
+  color: #000d6b;
+  margin: 0;
+}
+
+/* Consistent Styling for Spacing */
+.contact__info-item p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Social Media Links */
+.social__link-icon {
+  font-size: 1.5rem;
+  color: #000d6b;
+}
+
+.social__link-icon:hover {
+  color: #004d99;
+}
+
+/* Map Container */
+.map-container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border: 2px solid #000d6b;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}

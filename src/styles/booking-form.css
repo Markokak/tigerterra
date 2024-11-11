@@ -1,0 +1,95 @@
+.booking__form {
+  width: 100%;
+}
+
+.booking__form input {
+  padding: 8px 15px;
+  border: 1px solid #7c8a972a;
+  color: #7c8a97;
+  width: 100%;
+}
+
+.booking__form select,
+.textarea {
+  width: 100%;
+  padding: 10px 15px;
+  color: #7c8a97;
+  border: 1px solid #7c8a972a;
+  border-radius: 4px;
+}
+
+.time__picker::before {
+  content: "Journey Time";
+  color: #7c8a97;
+  margin-right: 0.5rem;
+}
+
+.textarea:focus,
+.booking__form input:focus,
+.booking__form select:focus {
+  outline: none;
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.name-fields .booking__form {
+  width: 48%;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .booking__form {
+    width: 100%;
+  }
+
+  .booking__form input,
+  .textarea,
+  .booking__form select {
+    font-size: 0.8rem;
+  }
+
+  .name-fields {
+    flex-direction: column;
+  }
+
+  .name-fields .booking__form {
+    width: 100%;
+  }
+}
+
+.booking__btn {
+  background-color: #000d6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.booking__btn:hover {
+  background-color: #004d99;
+}
+
+/* Status message styling */
+.status-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.status-message.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-message.error {
+  background-color: #dc3545;
+  color: white;
+}

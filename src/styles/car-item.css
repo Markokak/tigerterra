@@ -1,0 +1,139 @@
+.car__item {
+  border: 1px solid #7c8a9736;  /* Border for the item */
+  padding: 20px;                 /* Padding inside the item */
+  border-radius: 5px;            /* Rounded corners */
+  position: relative;            /* Positioning for child elements */
+  overflow: hidden;              /* Hide overflow from image */
+  text-align: center;            /* Center text within the item */
+}
+
+.car__img {
+  width: 100%;                   /* Full width of image container */
+  height: 0;                      /* Set height to 0 for aspect ratio */
+  padding-top: 100%;             /* Adjust for a square aspect ratio */
+  position: relative;            /* Positioning for absolute child elements */
+}
+
+.car__img img {
+  position: absolute;            /* Absolutely position the image */
+  top: 0;                         /* Align to top */
+  left: 0;                        /* Align to left */
+  width: 100%;                    /* Ensure the image takes full width */
+  height: 100%;                   /* Ensure the image fills the height */
+  object-fit: contain;            /* Use contain to avoid zooming */
+}
+
+.car__item-content {
+  margin-top: 10px;               /* Space between image and content */
+}
+
+.car__item-content h4 {
+  font-size: 1.2rem;              /* Smaller font size for car name */
+  margin: 10px 0;                 /* Margin for spacing */
+  white-space: nowrap;            /* Prevent text from wrapping */
+  overflow: hidden;               /* Hide overflow text */
+  text-overflow: ellipsis;        /* Add "..." to truncated text */
+}
+
+.car__item-content h6 {
+  font-size: 1.2rem;              /* Price font size */
+  font-weight: 600;               /* Bold weight for emphasis */
+  margin: 10px 0;                 /* Margin for spacing */
+}
+
+.car__item-info {
+  display: flex;                  /* Flexbox for alignment */
+  align-items: center;            /* Center items vertically */
+  justify-content: space-around;  /* Space out items evenly */
+  margin: 10px 0;                 /* Margin on top and bottom */
+}
+
+.car__item-info span {
+  display: flex;                  /* Flexbox for individual info items */
+  align-items: center;            /* Center items vertically */
+  gap: 0.5rem;                    /* Space between icon and text */
+}
+
+.car__item-info span i {
+  color: #f9a826;                 /* Orange color for icons */
+}
+
+.car__item-info span span {
+  color: #000;                    /* Black color for text */
+}
+
+.car__item-btn {
+  border-radius: 4px;             /* Rounded corners for buttons */
+  border: none;                   /* Remove border */
+  outline: none;                  /* Remove outline */
+  padding: 8px 0;                 /* Padding for buttons */
+  cursor: pointer;                /* Pointer cursor for buttons */
+  margin-top: 10px;               /* Margin at top for spacing */
+}
+
+.car__btn-rent {
+  background: #000d6b;            /* Background color for rent button */
+  color: #fff;                    /* Text color for rent button */
+}
+
+.car__btn-details {
+  background: #f9a826;            /* Background color for details button */
+  color: #fff;                    /* Text color for details button */
+}
+
+.car__item-btn a {
+  text-decoration: none;          /* Remove underline from links */
+  color: inherit;                 /* Inherit text color from button */
+  font-weight: 500;               /* Font weight for button text */
+}
+
+.car__item-btn a:hover {
+  color: #fff;                    /* White text on hover */
+}
+
+@media only screen and (max-width: 992px) {
+  .car__item h4 {
+      font-size: 1.1rem;          /* Adjust title font size */
+      margin-bottom: 0;           /* No margin at bottom */
+  }
+
+  .car__item h6 {
+      font-size: 1rem;            /* Adjust price font size */
+      margin-top: 10px;           /* Margin at top */
+  }
+
+  .car__item-info {
+      flex-wrap: wrap;            /* Allow items to wrap on smaller screens */
+  }
+
+  .car__item-info span {
+      font-size: 0.8rem;          /* Smaller font size for info items */
+  }
+
+  .car__item-btn {
+      padding: 5px 10px;          /* Smaller padding for buttons */
+      font-size: 0.9rem;          /* Smaller font size for buttons */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item h4 {
+      font-size: 1rem;            /* Further adjust title font size */
+  }
+
+  .car__item h6 {
+      font-size: 0.9rem;          /* Further adjust price font size */
+  }
+
+  .car__item-info span {
+      font-size: 0.7rem;          /* Further adjust font size for info items */
+  }
+
+  .car__item-info span i {
+      font-size: 0.9rem;          /* Adjust icon size */
+  }
+
+  .car__item-btn {
+      font-size: 0.8rem;          /* Smaller font size for buttons */
+  }
+}
